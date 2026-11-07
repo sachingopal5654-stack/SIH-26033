@@ -74,24 +74,10 @@ A modular MVP web app with REST APIs, PostgreSQL data storage, deterministic mat
 8. Pilot with an FPO and buyers; evaluate measured outcomes.
 
 ### Order and logistics sequence
-```mermaid
-sequenceDiagram
-    participant Farmer
-    participant Platform
-    participant Buyer
-    participant FPO
-    participant Carrier
-    Farmer->>Platform: Publish crop, quantity, grade, harvest window
-    Buyer->>Platform: Browse or submit demand
-    Platform->>Platform: Match and pool compatible lots
-    Platform-->>Farmer: Offer and net price breakdown
-    Farmer->>Platform: Accept / reject
-    Platform->>FPO: Collection and aggregation plan
-    Platform->>Carrier: Capacity-aware dispatch plan
-    Carrier->>Buyer: Deliver produce
-    Buyer-->>Platform: Delivery confirmation / issue
-    Platform-->>Farmer: Settlement status
-```
+
+![KisanSetu Direct — Order and Logistics Sequence](diagrams/order-logistics-sequence.svg)
+
+*The sequence diagram visualizes the ten-step interaction among Farmer, Platform, Buyer, FPO, and Carrier, from crop listing and matching through delivery and farmer settlement.*
 
 ## Feasibility and Viability
 ### Feasibility
