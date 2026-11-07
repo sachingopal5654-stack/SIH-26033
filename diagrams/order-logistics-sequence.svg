@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1050" viewBox="0 0 1500 1050">
+<rect width="1500" height="1050" fill="#ffffff"/>
+<rect x="35" y="25" width="1430" height="88" rx="22" fill="#064e3b"/>
+<text x="750" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">Order and Logistics Sequence — KisanSetu Direct</text>
+<!-- participant headers -->
+<g font-family="Arial, sans-serif" font-size="25" font-weight="bold" text-anchor="middle">
+<rect x="50" y="145" width="220" height="90" rx="16" fill="#dcfce7" stroke="#15803d" stroke-width="3"/><text x="160" y="198" fill="#14532d">Farmer</text>
+<rect x="340" y="145" width="220" height="90" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="450" y="198" fill="#1e3a8a">Platform</text>
+<rect x="630" y="145" width="220" height="90" rx="16" fill="#f3e8ff" stroke="#9333ea" stroke-width="3"/><text x="740" y="198" fill="#581c87">Buyer</text>
+<rect x="920" y="145" width="220" height="90" rx="16" fill="#ecfccb" stroke="#65a30d" stroke-width="3"/><text x="1030" y="198" fill="#365314">FPO</text>
+<rect x="1210" y="145" width="220" height="90" rx="16" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/><text x="1320" y="198" fill="#9a3412">Carrier</text>
+</g>
+<!-- lifelines -->
+<g stroke-width="3" stroke-dasharray="10 9" opacity="0.7">
+<path d="M160 235 V970" stroke="#15803d"/><path d="M450 235 V970" stroke="#2563eb"/><path d="M740 235 V970" stroke="#9333ea"/><path d="M1030 235 V970" stroke="#65a30d"/><path d="M1320 235 V970" stroke="#ea580c"/>
+</g>
+<!-- arrow markers -->
+<defs><marker id="arr" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="context-stroke"/></marker></defs>
+<!-- messages and labels -->
+<g font-family="Arial, sans-serif" font-size="21" fill="#172033">
+<!-- 1 -->
+<path d="M160 290 H450" stroke="#15803d" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="172" y="252" width="265" height="34" rx="10" fill="#dcfce7"/><text x="304" y="276" text-anchor="middle" font-weight="bold">1. Publish crop listing</text>
+<text x="304" y="310" text-anchor="middle" font-size="17">Quantity • grade • harvest window</text>
+<!-- 2 -->
+<path d="M740 365 H450" stroke="#9333ea" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="476" y="327" width="240" height="34" rx="10" fill="#f3e8ff"/><text x="596" y="351" text-anchor="middle" font-weight="bold">2. Submit buyer demand</text>
+<!-- 3 platform self -->
+<path d="M450 425 C560 425 560 475 450 475" stroke="#2563eb" stroke-width="4" fill="none" marker-end="url(#arr)"/>
+<rect x="485" y="412" width="270" height="60" rx="12" fill="#dbeafe" stroke="#2563eb"/><text x="620" y="437" text-anchor="middle" font-weight="bold">3. Match &amp; pool</text><text x="620" y="460" text-anchor="middle">Compatible produce lots</text>
+<!-- 4 -->
+<path d="M450 525 H160" stroke="#15803d" stroke-width="4" stroke-dasharray="9 6" marker-end="url(#arr)"/>
+<rect x="175" y="487" width="260" height="34" rx="10" fill="#dcfce7"/><text x="305" y="511" text-anchor="middle" font-weight="bold">4. Offer + net price breakdown</text>
+<!-- 5 -->
+<path d="M160 585 H450" stroke="#15803d" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="210" y="547" width="190" height="34" rx="10" fill="#dcfce7"/><text x="305" y="571" text-anchor="middle" font-weight="bold">5. Accept / reject</text>
+<!-- 6 -->
+<path d="M450 655 H1030" stroke="#65a30d" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="560" y="617" width="360" height="34" rx="10" fill="#ecfccb"/><text x="740" y="641" text-anchor="middle" font-weight="bold">6. Collection &amp; aggregation plan</text>
+<!-- 7 -->
+<path d="M450 725 H1320" stroke="#ea580c" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="690" y="687" width="390" height="34" rx="10" fill="#ffedd5"/><text x="885" y="711" text-anchor="middle" font-weight="bold">7. Capacity-aware dispatch plan</text>
+<!-- 8 -->
+<path d="M1320 795 H740" stroke="#0284c7" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="920" y="757" width="250" height="34" rx="10" fill="#e0f2fe"/><text x="1045" y="781" text-anchor="middle" font-weight="bold">8. Deliver produce</text>
+<!-- 9 -->
+<path d="M740 865 H450" stroke="#9333ea" stroke-width="4" stroke-dasharray="9 6" marker-end="url(#arr)"/>
+<rect x="475" y="827" width="245" height="34" rx="10" fill="#f3e8ff"/><text x="597" y="851" text-anchor="middle" font-weight="bold">9. Confirm delivery / issue</text>
+<!-- 10 -->
+<path d="M450 935 H160" stroke="#15803d" stroke-width="4" stroke-dasharray="9 6" marker-end="url(#arr)"/>
+<rect x="185" y="897" width="240" height="34" rx="10" fill="#dcfce7"/><text x="305" y="921" text-anchor="middle" font-weight="bold">10. Settlement status</text>
+</g>
+<text x="750" y="1015" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#64748b">Solid arrows: requests and plans  •  Dashed arrows: responses and status updates</text>
+</svg>
