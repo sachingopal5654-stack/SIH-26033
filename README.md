@@ -60,26 +60,8 @@ A modular MVP web app with REST APIs, PostgreSQL data storage, deterministic mat
 
 ### Architecture diagram
 ```mermaid
-flowchart TD
-    F[Farmers / FPOs] --> UI[Marketplace UI]
-    B[Consumers / Bulk Buyers] --> UI
-    L[Logistics Partners] --> UI
-    UI --> API[FastAPI Application]
-    API --> AUTH[Role-based Identity]
-    API --> LIST[Listings and Inventory]
-    API --> ORD[Offers, Orders, Settlement]
-    API --> MATCH[Demand Pooling and Matching]
-    API --> FORE[Demand Forecasting]
-    API --> ROUTE[Route and Load Optimizer]
-    LIST --> DB[(PostgreSQL / PostGIS)]
-    ORD --> DB
-    MATCH --> DB
-    DB --> DATA[Order History and Seasonality]
-    DATA --> FORE
-    ROUTE --> LOG[Dispatch Plan]
-    ORD --> NOTIF[Notifications]
-    LOG --> NOTIF
-    API --> AUD[Audit and Analytics]
+<img width="3057" height="3937" alt="KisanSetu_Direct_Clear_Flowchart" src="https://github.com/user-attachments/assets/7e7b18df-15f4-46eb-b76a-6d9a08d4256b" />
+
 ```
 
 ### Implementation process
