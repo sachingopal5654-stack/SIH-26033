@@ -1,10 +1,10 @@
-# Smart India Hackathon Workshop — SIH 26033
+# Smart India Hackathon Workshop
 **Date:** 7 November 2026  
-**Reference Number:** SIH-26033  
-**Name:** [Enter your name]
+**Reference Number:** 26011448
+**Name:** Sachin.G
 
 ## Problem Title
-SIH 26033: Multiple intermediaries reduce farmers' earnings and increase consumer prices.
+Multiple intermediaries reduce farmers' earnings and increase consumer prices.
 
 ## Problem Creator's Organization
 Ministry of Consumer Affairs, Food & Public Distribution
