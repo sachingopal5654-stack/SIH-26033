@@ -59,10 +59,9 @@ A modular MVP web app with REST APIs, PostgreSQL data storage, deterministic mat
 - Deployment: Docker, TLS, managed database, backups, monitoring.
 
 ### Architecture diagram
-```mermaid
-<img width="3057" height="3937" alt="KisanSetu_Direct_Clear_Flowchart" src="https://github.com/user-attachments/assets/7e7b18df-15f4-46eb-b76a-6d9a08d4256b" />
+![KisanSetu Direct — clear end-to-end workflow](https://github.com/user-attachments/assets/7e7b18df-15f4-46eb-b76a-6d9a08d4256b)
 
-```
+*The diagram shows the farmer/FPO and buyer entry paths, the matching decision, order confirmation, aggregation, pickup, delivery, and settlement.*
 
 ### Implementation process
 1. Model users, crop catalog, grades, units, listings, buyer demand, orders, vehicles, routes, and settlement.
